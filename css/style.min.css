@@ -1298,13 +1298,18 @@ nav.popup-menu .close-menu-btn img {
 }
 
 .main-slider .slide {
+  display: none;
+}
+
+.main-slider .slide-active {
   position: relative;
+  display: flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+
   height: 100%
 }
 
