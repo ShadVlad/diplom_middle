@@ -24,6 +24,6 @@ promo();
 //calculator
 calc();
 //connect
-sliderCarousel();
+//sliderCarousel();
 
 mainSlider();

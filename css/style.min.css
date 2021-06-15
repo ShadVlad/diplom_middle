@@ -1309,16 +1309,18 @@ nav.popup-menu .close-menu-btn img {
   display: -o-flex;
   display: -webkit-box;
   display: -ms-flexbox;
-
   height: 100%
 }
 
 .main-slider .slide .slide-text {
+
   position: relative;
+  width: 100%;
   z-index: 1001
 }
 
 .main-slider .slide .slide-text .offer-head {
+  width: 100%;
   margin-top: 80px;
   background: url(../images/slider-offer-bg.png) no-repeat 10px 0;
   padding-top: 20px
@@ -1540,19 +1542,19 @@ nav.popup-menu .close-menu-btn img {
   margin-right: 5px
 }
 
-.services-slider {
+/* .services-slider {
   display: flex;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px
-}
+} */
 
-.services-slider .slide {
+/* .services-slider .slide {
   text-align: center;
   margin-right: 6px;
   margin-left: 6px;
   width: 210px
-}
+} */
 
 .services-slider .slide img {
   margin: 0 auto 19px

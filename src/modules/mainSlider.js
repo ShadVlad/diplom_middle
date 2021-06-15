@@ -33,7 +33,7 @@ const mainSlider = () => {
   const stopSlide = () => {
     clearInterval(interval);
   };
-  startSlide(1500);
+  startSlide(1000);
 };
 
 export default mainSlider;
