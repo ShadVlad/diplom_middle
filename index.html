@@ -448,7 +448,8 @@
 
   </footer>
   <div class="wrapper">
-    <a href="#" id="totop"><i class="fa fa-arrow-up" aria-hidden="true"></i>
+    <a href="#" id="totop" hidden="true">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
     </a>
   </div>
   <div class="popup" id="callback_form">
@@ -533,7 +534,7 @@
     </div>
 
   </div>
-  <script src="./dist/bundle.js"></script>
+  <script src="./dist/dev-bundle.js"></script>
   <script src="./src/modules/sliderCarousel.js"></script>
   <script>
     const carousel = new SliderCarousel({
@@ -559,6 +560,16 @@
       // ]
     });
     carousel.init();
+  </script>
+  <!-- <script>
+    totop.onclick = function () {
+      window.scrollTo(pageXOffset, 0);
+      // после scrollTo возникнет событие "scroll", так что стрелка автоматически скроется
+    };
+
+    window.addEventListener('scroll', function () {
+      totop.hidden = (pageYOffset < document.documentElement.clientHeight);
+    }); -->
   </script>
 </body>
 

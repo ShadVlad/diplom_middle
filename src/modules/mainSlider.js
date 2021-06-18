@@ -12,7 +12,7 @@ const mainSlider = () => {
 
   const nextSlide = (elem, index, strClass) => {
     elem[index].classList.add(strClass);
-    console.log("elem[index]: ", elem[index].classList);
+    //console.log("elem[index]: ", elem[index].classList);
   };
   const autoPlaySlide = () => {
     //console.log("slide: ", slide);
@@ -22,7 +22,7 @@ const mainSlider = () => {
 
     currentSlide++;
     currentSlide = currentSlide % slide.length;
-    console.log("currentSlide: ", currentSlide);
+    //console.log("currentSlide: ", currentSlide);
     nextSlide(slide, currentSlide, "slide-active");
   };
 

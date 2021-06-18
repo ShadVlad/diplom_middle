@@ -21,7 +21,7 @@ class SliderCarousel {
     this.main = document.querySelector(main);
     this.wrap = document.querySelector(wrap);
     this.slides = document.querySelector(wrap).children;
-    console.log("~ this.slides", this.slides);
+    //console.log("~ this.slides", this.slides);
     this.prev = document.querySelector(prev);
     this.next = document.querySelector(next);
     this.slidesToShow = slidesToShow;
@@ -169,7 +169,7 @@ class SliderCarousel {
   responseInit() {
     const slidesToShowDefault = this.slidesToShow;
     const allResponse = this.responsive.map((item) => item.breakpoint);
-    console.log("allResponse: ", allResponse);
+    //console.log("allResponse: ", allResponse);
     const maxResponse = Math.max(...allResponse);
     const chekResponse = () => {
       const widthWindow = document.documentElement.clientWidth;
@@ -181,7 +181,7 @@ class SliderCarousel {
             this.slidesToShow = this.responsive[i].slidesToShow;
             //console.log("this.slidesToShow: ", this.slidesToShow);
             this.options.widthSlide = Math.floor(100 / this.slidesToShow);
-            console.log("this.options.widthSlide: ", this.options.widthSlide);
+            //console.log("this.options.widthSlide: ", this.options.widthSlide);
             this.addStyle();
           }
         }
@@ -194,7 +194,7 @@ class SliderCarousel {
     chekResponse();
 
     window.addEventListener("resize", () => {
-      console.log(document.documentElement.clientWidth);
+      //console.log(document.documentElement.clientWidth);
       chekResponse();
     });
   }

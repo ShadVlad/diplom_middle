@@ -2105,19 +2105,22 @@ footer .footer-bottom .right .socials .social-icon:hover a {
 }
 
 #totop {
-  display: none;
+
   position: fixed;
   bottom: 10px;
   right: 10px;
   z-index: 200;
   font-size: 28px;
   color: #1e1c34;
-  display: block;
   width: 35px;
   height: 35px;
   background-color: #ffd11a;
   text-align: center;
   border-radius: 50%
+}
+
+#totop::before {
+  display: block;
 }
 
 .popup {

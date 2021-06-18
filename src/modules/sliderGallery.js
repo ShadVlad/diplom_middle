@@ -72,7 +72,7 @@ const sliderGallery = () => {
   };
 
   slider.addEventListener("click", (event) => {
-    console.log("event: ", event.target.matches("button"));
+    //console.log("event: ", event.target.matches("button"));
     event.preventDefault();
     let target = event.target;
 
@@ -93,7 +93,7 @@ const sliderGallery = () => {
       dot.forEach((elem, index) => {
         if (elem === target.closest("li")) {
           currentSlide = index;
-          console.log("currentSlide: ", currentSlide);
+          //console.log("currentSlide: ", currentSlide);
         }
       });
     }

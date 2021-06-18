@@ -9,6 +9,7 @@ import sliderCarousel from "./modules/sliderCarousel";
 import toggleMenu from "./modules/toggleMenu";
 import togglePopUp from "./modules/togglePopUp";
 import sliderGallery from "./modules/sliderGallery";
+import toTop from "./modules/toTop";
 
 fixMenu();
 //
@@ -25,5 +26,6 @@ promo();
 calc();
 //connect
 //sliderCarousel();
+toTop();
 
 mainSlider();
