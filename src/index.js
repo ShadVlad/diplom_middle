@@ -12,7 +12,7 @@ import sliderGallery from "./modules/sliderGallery";
 import toTop from "./modules/toTop";
 import toggleGift from "./modules/toggleGift";
 import togglePopUp from "./modules/togglePopUp";
-//import fixMenu from "./modules/fixMenu";
+import freeVisitUp from "./modules/freeVisitUp";
 
 fixMenu();
 //
@@ -34,5 +34,7 @@ toTop();
 togglePopUp();
 
 toggleGift();
+
+freeVisitUp();
 
 mainSlider();
