@@ -7,7 +7,7 @@ import promo from "./modules/promo";
 import sendForm from "./modules/sendForm";
 import sliderCarousel from "./modules/sliderCarousel";
 import toggleMenu from "./modules/toggleMenu";
-import togglePopUp from "./modules/togglePopUp";
+import selectClub from "./modules/selectClub";
 import sliderGallery from "./modules/sliderGallery";
 import toTop from "./modules/toTop";
 
@@ -15,7 +15,7 @@ fixMenu();
 //
 toggleMenu();
 //
-togglePopUp();
+selectClub();
 //
 sendForm();
 //slider

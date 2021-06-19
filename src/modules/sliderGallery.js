@@ -36,7 +36,7 @@ const sliderGallery = () => {
     }
 
     dot = slider.querySelectorAll(".dot");
-    console.log("dot: ", dot);
+    //console.log("dot: ", dot);
   };
   let currentSlide = 0,
     interval;
