@@ -11,6 +11,7 @@ import selectClub from "./modules/selectClub";
 import sliderGallery from "./modules/sliderGallery";
 import toTop from "./modules/toTop";
 import toggleGift from "./modules/toggleGift";
+//import fixMenu from "./modules/fixMenu";
 
 fixMenu();
 //
