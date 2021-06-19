@@ -13,6 +13,7 @@ import toTop from "./modules/toTop";
 import toggleGift from "./modules/toggleGift";
 import togglePopUp from "./modules/togglePopUp";
 import freeVisitUp from "./modules/freeVisitUp";
+import callBackUp from "./modules/callBackUp";
 
 fixMenu();
 //
@@ -27,8 +28,9 @@ sliderGallery();
 promo();
 //calculator
 calc();
-//connect
-//sliderCarousel();
+
+callBackUp();
+
 toTop();
 
 togglePopUp();
