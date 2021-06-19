@@ -10,6 +10,7 @@ import toggleMenu from "./modules/toggleMenu";
 import selectClub from "./modules/selectClub";
 import sliderGallery from "./modules/sliderGallery";
 import toTop from "./modules/toTop";
+import toggleGift from "./modules/toggleGift";
 
 fixMenu();
 //
@@ -27,5 +28,7 @@ calc();
 //connect
 //sliderCarousel();
 toTop();
+
+toggleGift();
 
 mainSlider();
