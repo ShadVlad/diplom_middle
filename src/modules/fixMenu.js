@@ -2,7 +2,7 @@ const fixMenu = () => {
   const menuBtn = document.querySelector(".top-menu");
 
   //const menuBtnMenu = menuBtn[1];
-  console.log("menuBtnMenu: ", menuBtn);
+  //console.log("menuBtnMenu: ", menuBtn);
 
   window.addEventListener("scroll", () => {
     //console.log("scrolling: ");
