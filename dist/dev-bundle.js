@@ -49,7 +49,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mod
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar calc = function calc() {};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (calc);\n\n//# sourceURL=webpack://diplom_middle/./src/modules/calc.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar calc = function calc() {\n  var cardOrder = document.getElementById(\"card_order\"),\n      //docMozaika = document.getElementById(\"mozaika\"),\n  calcTime = cardOrder.querySelector(\".time\"),\n      cardMozaika = document.querySelector(\".mozaika\"); //console.log(\"document: \", document);\n\n  console.log(\"calcTime: \", calcTime);\n  console.log(\"cardMozaika: \", cardMozaika);\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (calc);\n\n//# sourceURL=webpack://diplom_middle/./src/modules/calc.js?");
 
 /***/ }),
 
@@ -617,7 +617,7 @@ eval("var map = {\n\t\"./log\": \"./node_modules/webpack/hot/log.js\"\n};\n\n\nf
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("2d072e70fc05a1346273")
+/******/ 		__webpack_require__.h = () => ("64e33a4be011b9f00c52")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
