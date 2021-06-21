@@ -203,7 +203,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar toggleModal = function toggleModal(form) {\n  form.addEventListener(\"click\", function (event) {\n    var target = event.target,\n        targetClose = target.closest(\".close-form\"),\n        targetContent = target.closest(\".form-content\");\n    console.log(\"target: \", target);\n\n    if (target.closest(\".input-text\") || target.closest(\".personal-data\") || target.closest(\".btn-send\")) {\n      console.log(\"target: \", target);\n    } else if (targetClose || targetContent) {\n      form.style.display = \"none\";\n    }\n  });\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (toggleModal);\n\n//# sourceURL=webpack://diplom_middle/./src/modules/toggleModal.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar toggleModal = function toggleModal(form) {\n  form.addEventListener(\"click\", function (event) {\n    var target = event.target,\n        targetClose = target.closest(\".close-form\"),\n        targetContent = target.closest(\".form-content\");\n    console.log(\"target: \", target);\n\n    if (targetClose || targetContent == null) {\n      form.style.display = \"none\";\n    }\n  });\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (toggleModal);\n\n//# sourceURL=webpack://diplom_middle/./src/modules/toggleModal.js?");
 
 /***/ }),
 
@@ -628,7 +628,7 @@ eval("var map = {\n\t\"./log\": \"./node_modules/webpack/hot/log.js\"\n};\n\n\nf
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("d2d9dc5d82f1bc8cae37")
+/******/ 		__webpack_require__.h = () => ("e7362fa4e238863c53f0")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */

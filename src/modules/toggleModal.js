@@ -4,16 +4,9 @@ const toggleModal = (form) => {
       targetClose = target.closest(".close-form"),
       targetContent = target.closest(".form-content");
     console.log("target: ", target);
-    if (
-      target.closest(".input-text") ||
-      target.closest(".personal-data") ||
-      target.closest(".btn-send")
-    ) {
-      console.log("target: ", target);
-    } else if (targetClose || targetContent) {
+    if (targetClose || targetContent == null) {
       form.style.display = "none";
     }
   });
 };
-
 export default toggleModal;
