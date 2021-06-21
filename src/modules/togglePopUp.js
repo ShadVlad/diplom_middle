@@ -1,7 +1,7 @@
 const togglePopUp = () => {
   const popUpMenu = document.querySelector(".popup-menu"),
     menuBtn = document.querySelector(".menu-button");
-  console.log("popUpMenu: ", popUpMenu);
+  //console.log("popUpMenu: ", popUpMenu);
   menuBtn.addEventListener("click", (event) => {
     popUpMenu.style.display = "flex";
   });

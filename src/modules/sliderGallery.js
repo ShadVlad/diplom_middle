@@ -19,7 +19,7 @@ const sliderGallery = () => {
   // arrows.appendChild(arrowsSpan);
   // slider.appendChild(arrows);
   const addDot = () => {
-    console.log("dots: ", dots);
+    //console.log("dots: ", dots);
     for (let i = 1; i <= slide.length; i++) {
       let newDot = document.createElement("li"),
         newBtn = document.createElement("button");

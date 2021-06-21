@@ -32,7 +32,7 @@ class SliderCarousel {
       maxPosition: this.slides.length - this.slidesToShow,
     };
     this.responsive = responsive;
-    console.log("responsive: ", responsive);
+    //console.log("responsive: ", responsive);
   }
 
   init() {
@@ -192,7 +192,7 @@ class SliderCarousel {
         this.options.widthSlide = Math.floor(100 / this.slidesToShow);
         this.addStyle();
       }
-      console.log("slidesToShow: ", slidesToShowDefault);
+      //console.log("slidesToShow: ", slidesToShowDefault);
     };
     chekResponse();
 

@@ -1,0 +1,88 @@
+const dbCards = {
+  mozaika: [
+    {
+      id: 1,
+      long: "1 месяц",
+      cost: 1999,
+      currency: "₽",
+      type: "соло",
+      frost: "* Без заморозки",
+    },
+    {
+      id: 2,
+      long: "6 месяцев",
+      cost: 9900,
+      currency: "₽",
+      type: "соло",
+      frost: "* Без заморозки",
+    },
+    {
+      id: 3,
+      long: "9 месяцев",
+      cost: 13900,
+      currency: "₽",
+      type: "соло",
+      frost: "* Без заморозки",
+    },
+    {
+      id: 4,
+      long: "12 месяцев",
+      cost: 9900,
+      currency: "₽",
+      type: "дневная",
+      frost: "* 1 месяц заморозки",
+    },
+    {
+      id: 5,
+      long: "12 месяцев",
+      cost: 19900,
+      currency: "₽",
+      type: "соло",
+      frost: "* 1 месяц заморозки",
+    },
+  ],
+  schelkovo: [
+    {
+      id: 1,
+      long: "1 месяц",
+      cost: 2999,
+      currency: "₽",
+      type: "соло",
+      frost: "* Без заморозки",
+    },
+    {
+      id: 2,
+      long: "6 месяцев",
+      cost: 14990,
+      currency: "₽",
+      type: "соло",
+      frost: "* Без заморозки",
+    },
+    {
+      id: 3,
+      long: "9 месяцев",
+      cost: 21990,
+      currency: "₽",
+      type: "соло",
+      frost: "* Без заморозки",
+    },
+    {
+      id: 4,
+      long: "12 месяцев",
+      cost: 14990,
+      currency: "₽",
+      type: "дневная",
+      frost: "* 1 месяц заморозки",
+    },
+    {
+      id: 5,
+      long: "12 месяцев",
+      cost: 24990,
+      currency: "₽",
+      type: "соло",
+      frost: "* 1 месяц заморозки",
+    },
+  ],
+};
+
+export default dbCards;
