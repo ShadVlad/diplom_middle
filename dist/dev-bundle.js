@@ -115,7 +115,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar promo = function promo() {\n  var priceMessage = document.querySelector(\".price-message\"),\n      inputPromo = priceMessage.querySelector(\"input\"),\n      totalPrice = document.getElementById(\"price-total\");\n  console.log(\"inputPromo: \", inputPromo);\n  totalPrice.textContent = (totalPrice.textContent * 0.3).toFixed(2);\n  inputPromo.addEventListener(\"change\", function () {\n    console.log(\"valueChange\");\n\n    if (inputPromo.value == \"ТЕЛО2020\") {\n      totalPrice.textContent = (totalPrice.textContent * 0.3).toFixed(2);\n    }\n  });\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (promo);\n\n//# sourceURL=webpack://diplom_middle/./src/modules/promo.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar promo = function promo() {};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (promo);\n\n//# sourceURL=webpack://diplom_middle/./src/modules/promo.js?");
 
 /***/ }),
 
@@ -628,7 +628,7 @@ eval("var map = {\n\t\"./log\": \"./node_modules/webpack/hot/log.js\"\n};\n\n\nf
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("555f555b698136e51702")
+/******/ 		__webpack_require__.h = () => ("fc7634d7a19ed6ca21e3")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
