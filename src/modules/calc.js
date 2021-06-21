@@ -4,6 +4,8 @@ const calc = () => {
   const cardOrder = document.getElementById("card_order"),
     calcTime = cardOrder.querySelector(".time"),
     calcClub = cardOrder.querySelectorAll(".club"),
+    priceMessage = document.querySelector(".price-message"),
+    inputPromo = priceMessage.querySelector("input"),
     calcPrice = document.getElementById("price-total");
 
   const cardChecked = (checkedTime, checkedClub) => {
@@ -16,6 +18,15 @@ const calc = () => {
     return elem.querySelector("input:checked");
   };
 
+  const isPromo = (elem) => {
+    if (inputPromo.value == "ТЕЛО2020") {
+      calcPrice.textContent = (calcPrice.textContent * 0.7).toFixed(2);
+    } else {
+      calcPrice.textContent = cardSelect[0]["cost"];
+      console.log('cardSelect[0]["cost"]: ', cardSelect[0]["cost"]);
+    }
+  };
+
   let inputCheckedTime = isCheked(calcTime),
     inputCheckedClub = isCheked(calcClub[0]);
 
@@ -24,7 +35,12 @@ const calc = () => {
   });
 
   calcPrice.textContent = cardSelect[0]["cost"];
+  isPromo();
 
+  inputPromo.addEventListener("change", () => {
+    calcPrice.textContent = cardSelect[0]["cost"];
+    isPromo();
+  });
   cardOrder.addEventListener("click", (e) => {
     if (e.detail != 0) {
       return;
@@ -42,10 +58,11 @@ const calc = () => {
       });
     }
 
-    const cardSelect = dbCards[inputCheckedClub.value].filter(function (e) {
+    cardSelect = dbCards[inputCheckedClub.value].filter(function (e) {
       return e.long == inputCheckedTime.value && e.type == "соло";
     });
     calcPrice.textContent = cardSelect[0]["cost"];
+    isPromo();
   });
 };
 
