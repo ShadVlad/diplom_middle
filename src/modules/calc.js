@@ -23,7 +23,6 @@ const calc = () => {
       calcPrice.textContent = (calcPrice.textContent * 0.7).toFixed(2);
     } else {
       calcPrice.textContent = cardSelect[0]["cost"];
-      console.log('cardSelect[0]["cost"]: ', cardSelect[0]["cost"]);
     }
   };
 
