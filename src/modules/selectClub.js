@@ -12,7 +12,7 @@ const selectClub = () => {
     //console.log("target: ", target.closest(".clubs-list"));
 
     if (target.closest(".clubs-list") == null) {
-      event.preventDefault();
+      //event.preventDefault();
       clubItems.style.display = "none";
       return;
     }
