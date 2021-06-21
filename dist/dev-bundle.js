@@ -31,6 +31,17 @@ eval("\nmodule.exports = function () {\n\treturn /[\\u001b\\u009b][[()#;?]*(?:[0
 
 /***/ }),
 
+/***/ "./src/DBCards.js":
+/*!************************!*\
+  !*** ./src/DBCards.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar dbCards = {\n  mozaika: [{\n    id: 1,\n    \"long\": 1,\n    cost: 1999,\n    currency: \"₽\",\n    type: \"соло\",\n    frost: \"* Без заморозки\"\n  }, {\n    id: 2,\n    \"long\": 6,\n    cost: 9900,\n    currency: \"₽\",\n    type: \"соло\",\n    frost: \"* Без заморозки\"\n  }, {\n    id: 3,\n    \"long\": 9,\n    cost: 13900,\n    currency: \"₽\",\n    type: \"соло\",\n    frost: \"* Без заморозки\"\n  }, {\n    id: 4,\n    \"long\": 12,\n    cost: 9900,\n    currency: \"₽\",\n    type: \"дневная\",\n    frost: \"* 1 месяц заморозки\"\n  }, {\n    id: 5,\n    \"long\": 12,\n    cost: 19900,\n    currency: \"₽\",\n    type: \"соло\",\n    frost: \"* 1 месяц заморозки\"\n  }],\n  schelkovo: [{\n    id: 1,\n    \"long\": 1,\n    cost: 2999,\n    currency: \"₽\",\n    type: \"соло\",\n    frost: \"* Без заморозки\"\n  }, {\n    id: 2,\n    \"long\": 6,\n    cost: 14990,\n    currency: \"₽\",\n    type: \"соло\",\n    frost: \"* Без заморозки\"\n  }, {\n    id: 3,\n    \"long\": 9,\n    cost: 21990,\n    currency: \"₽\",\n    type: \"соло\",\n    frost: \"* Без заморозки\"\n  }, {\n    id: 4,\n    \"long\": 12,\n    cost: 14990,\n    currency: \"₽\",\n    type: \"дневная\",\n    frost: \"* 1 месяц заморозки\"\n  }, {\n    id: 5,\n    \"long\": 12,\n    cost: 24990,\n    currency: \"₽\",\n    type: \"соло\",\n    frost: \"* 1 месяц заморозки\"\n  }]\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (dbCards);\n\n//# sourceURL=webpack://diplom_middle/./src/DBCards.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -49,7 +60,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mod
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar calc = function calc() {\n  var cardOrder = document.getElementById(\"card_order\"),\n      //docMozaika = document.getElementById(\"mozaika\"),\n  calcTime = cardOrder.querySelector(\".time\"); //cardMozaika = document.querySelector(\".mozaika\");\n  //console.log(\"document: \", document);\n\n  console.log(\"calcTime: \", calcTime); //console.log(\"cardMozaika: \", cardMozaika);\n\n  console.log(\"cardOrder: \", cardOrder); //let inputChecked = calcTime.querySelector(\"input:checked\");\n  //console.log(\"inputChecked: \", inputChecked);\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (calc);\n\n//# sourceURL=webpack://diplom_middle/./src/modules/calc.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _DBCards__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../DBCards */ \"./src/DBCards.js\");\n\n\nvar calc = function calc() {\n  var cardOrder = document.getElementById(\"card_order\"),\n      //docMozaika = document.getElementById(\"mozaika\"),\n  calcTime = cardOrder.querySelector(\".time\"),\n      calcClub = cardOrder.querySelectorAll(\".club\"); //console.log(\"calcClub: \", calcClub);\n\n  var inputCheckedTime, inputCheckedClub;\n\n  var isCheked = function isCheked(elem) {\n    return elem.querySelector(\"input:checked\");\n  };\n\n  cardOrder.addEventListener(\"click\", function (e) {\n    if (e.detail != 0) {\n      return;\n    }\n\n    var target = e.target;\n\n    if (target.closest(\".time\")) {\n      inputCheckedTime = isCheked(calcTime);\n      console.log(\"inputChecked: \", inputCheckedTime);\n    }\n\n    if (target.closest(\".club\")) {\n      calcClub.forEach(function (club) {\n        if (isCheked(club) != null) {\n          inputCheckedClub = isCheked(club);\n        }\n      });\n      console.log(\"inputChecked: \", inputCheckedClub);\n    }\n  });\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (calc);\n\n//# sourceURL=webpack://diplom_middle/./src/modules/calc.js?");
 
 /***/ }),
 
@@ -617,7 +628,7 @@ eval("var map = {\n\t\"./log\": \"./node_modules/webpack/hot/log.js\"\n};\n\n\nf
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("c5bc6a00c9f311fff7c1")
+/******/ 		__webpack_require__.h = () => ("d797d064893303ae8920")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */

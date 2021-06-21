@@ -2,7 +2,7 @@ const dbCards = {
   mozaika: [
     {
       id: 1,
-      long: "1 месяц",
+      long: 1,
       cost: 1999,
       currency: "₽",
       type: "соло",
@@ -10,7 +10,7 @@ const dbCards = {
     },
     {
       id: 2,
-      long: "6 месяцев",
+      long: 6,
       cost: 9900,
       currency: "₽",
       type: "соло",
@@ -18,7 +18,7 @@ const dbCards = {
     },
     {
       id: 3,
-      long: "9 месяцев",
+      long: 9,
       cost: 13900,
       currency: "₽",
       type: "соло",
@@ -26,7 +26,7 @@ const dbCards = {
     },
     {
       id: 4,
-      long: "12 месяцев",
+      long: 12,
       cost: 9900,
       currency: "₽",
       type: "дневная",
@@ -34,7 +34,7 @@ const dbCards = {
     },
     {
       id: 5,
-      long: "12 месяцев",
+      long: 12,
       cost: 19900,
       currency: "₽",
       type: "соло",
@@ -44,7 +44,7 @@ const dbCards = {
   schelkovo: [
     {
       id: 1,
-      long: "1 месяц",
+      long: 1,
       cost: 2999,
       currency: "₽",
       type: "соло",
@@ -52,7 +52,7 @@ const dbCards = {
     },
     {
       id: 2,
-      long: "6 месяцев",
+      long: 6,
       cost: 14990,
       currency: "₽",
       type: "соло",
@@ -60,7 +60,7 @@ const dbCards = {
     },
     {
       id: 3,
-      long: "9 месяцев",
+      long: 9,
       cost: 21990,
       currency: "₽",
       type: "соло",
@@ -68,7 +68,7 @@ const dbCards = {
     },
     {
       id: 4,
-      long: "12 месяцев",
+      long: 12,
       cost: 14990,
       currency: "₽",
       type: "дневная",
@@ -76,7 +76,7 @@ const dbCards = {
     },
     {
       id: 5,
-      long: "12 месяцев",
+      long: 12,
       cost: 24990,
       currency: "₽",
       type: "соло",
