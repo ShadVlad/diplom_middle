@@ -14,6 +14,7 @@ import toggleGift from "./modules/toggleGift";
 import togglePopUp from "./modules/togglePopUp";
 import freeVisitUp from "./modules/freeVisitUp";
 import callBackUp from "./modules/callBackUp";
+import validation from "./modules/validation";
 
 fixMenu();
 //
@@ -21,7 +22,13 @@ toggleMenu();
 //
 selectClub();
 //
-sendForm();
+for (let i = 1; i < 3; i++) {
+  let form = document.getElementById("form" + i);
+  console.log("form: ", form);
+  sendForm(form);
+}
+
+validation();
 //slider
 sliderGallery();
 // command
