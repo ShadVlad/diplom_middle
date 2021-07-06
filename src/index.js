@@ -21,7 +21,11 @@ toggleMenu();
 //
 selectClub();
 //
-sendForm();
+for (let i = 1; i < 3; i++) {
+  let form = document.getElementById("form" + i);
+  sendForm(form);
+}
+
 //slider
 sliderGallery();
 // command
